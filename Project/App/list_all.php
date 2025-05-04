@@ -1,5 +1,5 @@
-<?php include 'api.php';
-$projects = callAPI("GET", "http://localhost:8000/projects");
+<?php include 'index.php';
+$projects = callAPI("GET", "http://localhost:8000/projects/list_all");
 ?>
 
 <h1>Projetos</h1>

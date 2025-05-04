@@ -1,4 +1,4 @@
-<?php include 'api.php';
+<?php include 'index.php';
 
 $id = $_GET['id'];
 $project = callAPI("GET", "http://localhost:8000/projects/$id");
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "status" => $_POST['status']
     ];
     callAPI("PUT", "http://localhost:8000/projects/$id", $data);
-    header("Location: index.php");
+    header("Location: list_all.php");
     exit;
 }
 ?>

@@ -1,4 +1,4 @@
-<?php include 'api.php';
+<?php include 'index.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = [
@@ -6,8 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "description" => $_POST['description'],
         "status" => $_POST['status']
     ];
-    callAPI("POST", "http://localhost:8000/projects", $data);
-    header("Location: index.php");
+    callAPI("POST", "http://localhost:8000/projects/create", $data);
+    header("Location: create.php");
     exit;
 }
 ?>

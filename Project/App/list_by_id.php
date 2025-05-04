@@ -1,4 +1,4 @@
-<?php include 'api.php';
+<?php include 'index.php';
 
 $id = $_GET['id'];
 $project = callAPI("GET", "http://localhost:8000/projects/$id");
@@ -10,4 +10,4 @@ $project = callAPI("GET", "http://localhost:8000/projects/$id");
 <p><strong>Status:</strong> <?= $project['status'] ?></p>
 <p><strong>Descrição:</strong> <?= $project['description'] ?></p>
 <p><strong>Criado em:</strong> <?= $project['created_at'] ?></p>
-<a href="index.php">Voltar</a>
+<a href="list_all.php">Voltar</a>
