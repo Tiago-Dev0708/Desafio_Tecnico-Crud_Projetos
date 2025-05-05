@@ -7,6 +7,8 @@ services:
     container_name: fastapi_backend
     ports:
       - "8000:8000"
+    volumes:
+      - .:/app 
     env_file:
       - .env
     depends_on:
@@ -20,12 +22,14 @@ services:
     container_name: php_frontend
     volumes:
       - ./App:/var/www/html
+      - ./App/apache/custom.conf:/etc/apache2/conf-enabled/custom.conf
     ports:
       - "8080:80"
     depends_on:
       - api
     networks:
       - app-net
+
 
 
   postgres:
