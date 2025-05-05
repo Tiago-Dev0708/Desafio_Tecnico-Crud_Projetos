@@ -30,8 +30,6 @@ services:
     networks:
       - app-net
 
-
-
   postgres:
       image: postgres:latest
       restart: always
