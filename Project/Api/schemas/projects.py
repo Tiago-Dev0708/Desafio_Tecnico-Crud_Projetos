@@ -1,11 +1,9 @@
-from pydantic import BaseModel, Field
-from datetime import datetime
+from pydantic import BaseModel
 
 class ProjectCreate(BaseModel):
     name: str
     description: str
     status: str = "active"
-    created_at: datetime = Field(default_factory=datetime.now)
 
 
 class UserOut(ProjectCreate):

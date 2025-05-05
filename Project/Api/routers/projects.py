@@ -9,6 +9,13 @@ async def create_project(project: ProjectCreate):
     created_project = await ProjectService.create_project(project)
     return created_project
 
+@router.put("/update/{project_id}")
+async def update_project(project_id: int, project: ProjectCreate):
+    updated_project = await ProjectService.update_project(project_id, project)
+    if not updated_project:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Projeto não encontrado")
+    return updated_project
+
 @router.get("/list_by_id/{project_id}")
 async def list_project_by_id(project_id: int):
     project = await ProjectService.get_project_by_id(project_id)

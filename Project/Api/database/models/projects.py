@@ -7,5 +7,5 @@ class Project(Model):
     name = fields.TextField(max_lenght=120, nullable=False)
     description = fields.TextField()
     status = fields.TextField(default="active")
-    created_at = fields.DatetimeField(default=datetime.now())
+    created_at = fields.DatetimeField(default=datetime.today())
 

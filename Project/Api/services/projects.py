@@ -25,6 +25,15 @@ class ProjectService:
             await Project.filter(id=project_id).delete()
         except DoesNotExist:
             return None
+        
+    @staticmethod
+    async def update_project(project_id: int, data: ProjectCreate) -> Project | None:
+        try:
+            project = await Project.get(id=project_id)
+            await project.update_from_dict(data.model_dump()).save()
+            return project
+        except DoesNotExist:
+            return None
     
     
         
