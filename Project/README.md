@@ -27,6 +27,18 @@
 ## INSTALE AS DEPENDÊNCIAS PARA SUBIR O BACKEND
     pip install -r requirements.txt
 
+##  CRIE UM ARQUIVO .env E COLE O SEGUINTE TRECHO DE CÓDIGO
+    PG_USER=admin
+    PG_PASS=admin
+    PG_DB=CrudProject
+    PG_HOST=postgres
+    PG_PORT=5432
+
+    PGADMIN_EMAIL="admin@gmail.com"
+    PGADMIN_PASSWORD="admin"
+
+    DATABASE_URL="postgres://admin:admin@postgres:5432/CrudProject"
+
 ## APÓS A INSTALAÇÃO DE DEPENDÊNCIAS, RODE O O COMANDO
 
     docker compose up -d --build
