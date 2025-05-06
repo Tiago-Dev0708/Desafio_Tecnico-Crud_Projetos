@@ -7,13 +7,7 @@ from Api.routers.projects import router
 
 app = FastAPI()
 
-# Include the router from the projects module
 app.include_router(router)
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
 
 
 register_tortoise(
