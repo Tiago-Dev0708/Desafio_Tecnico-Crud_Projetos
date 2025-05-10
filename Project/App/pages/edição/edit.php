@@ -1,7 +1,7 @@
 <?php include __DIR__ . '/../../config/api.php'; 
 
 $id = $_GET['id'];
-$project = callAPI("GET", "http://api:8000/projects/list_by_id/$id");
+$project = callAPI("GET", "http://api:8000/api/v1/projects/list_by_id/$id");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = [
@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "description" => $_POST['description'],
         "status" => $_POST['status']
     ];
-    callAPI("PUT", "http://api:8000/projects/update/$id", $data);
+    callAPI("PUT", "http://api:8000/api/v1/projects/update/$id", $data);
     header("Location: ../listagem/list_all.php");
     exit;
 }

@@ -16,3 +16,9 @@ class UserOut(ProjectCreate):
 class StandardResponse(BaseModel):
     message: str
     
+
+class ProjectResponse(UserOut):
+    id: int
+    name: str
+    description: str
+    status: str = "active"

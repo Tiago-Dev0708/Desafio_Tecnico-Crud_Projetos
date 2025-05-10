@@ -1,0 +1,16 @@
+2025-05-10 15:44:05,644 - app_logger - INFO - Projeto criado.
+2025-05-10 15:45:37,762 - app_logger - INFO - Projeto string criado.
+2025-05-10 15:47:10,344 - app_logger - INFO - Falha ao criar projeto, string ja existe
+2025-05-10 15:49:19,169 - app_logger - INFO - Falha ao criar projeto, string ja existe
+2025-05-10 15:53:42,769 - app_logger - INFO - Falha ao criar projeto, string ja existe.
+2025-05-10 15:53:49,119 - app_logger - INFO - Nenhum projeto encontrado com ID: 1.
+2025-05-10 15:53:58,603 - app_logger - INFO - Erro ao buscar projeto de ID: 2.
+2025-05-10 15:54:06,535 - app_logger - INFO - Projetos sendo listados.
+2025-05-10 15:54:23,593 - app_logger - INFO - Projetos sendo listados.
+2025-05-10 15:55:35,019 - app_logger - INFO - Projeto de ID: 37 foi atualizado.
+2025-05-10 15:55:35,922 - app_logger - INFO - Projeto de ID: 37 foi atualizado.
+2025-05-10 15:56:28,822 - app_logger - INFO - Projeto de ID: 37 listado.
+2025-05-10 15:56:41,274 - app_logger - INFO - Projeto deletado com sucesso.
+2025-05-10 15:56:42,313 - app_logger - INFO - Nenhum projeto encontrado com ID: 37.
+2025-05-10 15:56:49,589 - app_logger - INFO - Nenhum projeto encontrado.
+2025-05-10 15:56:50,263 - app_logger - INFO - Nenhum projeto encontrado.
