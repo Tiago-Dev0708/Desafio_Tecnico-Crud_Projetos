@@ -21,7 +21,7 @@
             <tbody>
                 <?php include __DIR__ . '/../../config/api.php';
 
-                $projects = callAPI("GET", "http://api:8000/projects/list_all");
+                $projects = callAPI("GET", "http://api:8000/api/v1/projects/list_all");
                 foreach ($projects as $project): ?>
                     <tr>
                         <td><?= $project['id'] ?></td>

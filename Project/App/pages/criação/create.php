@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "status" => $_POST['status']
     ];
 
-    $response = callAPI("POST", "http://api:8000/projects/create", $data);
+    $response = callAPI("POST", "http://api:8000/api/v1/projects/create", $data);
     if ($response && isset($response['id'])) {
         header("Location: ../listagem/list_all.php?success=Projeto criado com sucesso");
     } else {
