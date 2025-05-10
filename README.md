@@ -19,15 +19,17 @@
     cd Desafio_Tecnico-Crud_Projetos/Project
 
 ## INSTALE E ATIVE UM AMBIENTE VIRTUAL PYTHON 
-
+### INSTALAÇÃO
     python3 -m venv venv
+     
+### ATIVAÇÃO
     Linux: source venv/bin/activate
-    Windows: .\venv\Scripts\activate 
+    Windows: .\venv\Scripts\activate
 
 ## INSTALE AS DEPENDÊNCIAS PARA SUBIR O BACKEND
     pip install -r requirements.txt
 
-##  CRIE UM ARQUIVO .env NO DIRETORIO PROJECT E COLE O SEGUINTE TRECHO DE CÓDIGO
+##  CRIE "caso não tenha" UM ARQUIVO .env E COLE O SEGUINTE TRECHO DE CÓDIGO
     PG_USER=admin
     PG_PASS=admin
     PG_DB=CrudProject
@@ -43,10 +45,8 @@
 
     docker compose up -d --build
 
+## AUTOR
+- [@Tiago-Dev0708](https://github.com/Tiago-Dev0708)
 
-
-
-
-
-
-
+## COLABORADOR
+- [@Rodrigo-Kelven](https://github.com/Rodrigo-Kelven)
